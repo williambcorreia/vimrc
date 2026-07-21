@@ -9,6 +9,8 @@ set splitright
 set tabstop=2
 set shiftwidth=2
 set t_Co=256
+set shortmess+=I
+set noruler
 
 let mapleader=" "
 nnoremap <silent> <leader>t :tabnew \| Ex<CR>
@@ -30,8 +32,12 @@ call plug#end()
 let g:hardtime_default_on = 1
 let g:hardtime_maxcount = 2
 let g:netrw_dirhistmax = 0
+let g:netrw_banner = 0
+let g:AutoPairsFlyMode = 0
+let g:AutoPairsShortcutJump = '<Tab>'
 
 syntax on
+set background=dark
 set termguicolors
 filetype plugin indent on
 colorscheme ayu
